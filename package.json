@@ -1,0 +1,10 @@
+{
+  "name": "create-toy-react-app",
+  "version": "1.0.0",
+  "description": "CLI tool for React Deep Dive",
+  "main": "lib/index.js",
+  "repository": "git@github.com:shuta13/create-toy-react-app.git",
+  "author": "shuta13 <hollystarsun@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
