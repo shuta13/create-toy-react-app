@@ -1,6 +1,6 @@
 {
   "name": "create-toy-react-app",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "main": "lib/bin.js",
   "files": [
     "lib"
@@ -23,13 +23,15 @@
     "clean": "rimraf lib",
     "build": "yarn clean && tsc"
   },
-  "devDependencies": {
-    "@types/hosted-git-info": "^3.0.2",
-    "@types/node": "^16.7.10",
+  "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.1.0",
     "execa": "^5.1.1",
-    "hosted-git-info": "^4.0.2",
+    "hosted-git-info": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/hosted-git-info": "^3.0.2",
+    "@types/node": "^16.7.10",
     "rimraf": "^3.0.2",
     "typescript": "^4.4.2"
   }
