@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "create-toy-react-app",
   "version": "1.0.0",
   "description": "CLI tool for React Deep Dive",
