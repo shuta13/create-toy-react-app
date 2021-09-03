@@ -1,10 +1,33 @@
 {
+  "private": true,
   "name": "create-toy-react-app",
   "version": "1.0.0",
   "description": "CLI tool for React Deep Dive",
-  "main": "lib/index.js",
-  "repository": "git@github.com:shuta13/create-toy-react-app.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shuta13/create-toy-react-app.git"
+  },
   "author": "shuta13 <hollystarsun@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/shuta13/create-toy-react-app/issues"
+  },
+  "bin": {
+    "create-toy-react-app": "lib/bin.js"
+  },
+  "homepage": "https://github.com/shuta13/create-toy-react-app#readme",
   "license": "MIT",
-  "private": true
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "yarn clean && tsc"
+  },
+  "devDependencies": {
+    "@types/hosted-git-info": "^3.0.2",
+    "@types/node": "^16.7.10",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "execa": "^5.1.1",
+    "hosted-git-info": "^4.0.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.2"
+  }
 }
