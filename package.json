@@ -1,6 +1,6 @@
 {
   "name": "create-toy-react-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for React Deep Dive",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "url": "https://github.com/shuta13/create-toy-react-app/issues"
   },
   "bin": {
-    "create-toy-react-app": "lib/bin.js"
+    "create-toy-react-app": "./lib/bin.js"
   },
   "homepage": "https://github.com/shuta13/create-toy-react-app#readme",
   "license": "MIT",
