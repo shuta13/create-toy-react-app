@@ -1,7 +1,10 @@
 {
   "name": "create-toy-react-app",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/bin.js",
+  "files": [
+    "lib"
+  ],
   "description": "CLI tool for React Deep Dive",
   "repository": {
     "type": "git",
