@@ -5,14 +5,15 @@ CLI tool for [React Deep Dive study group](https://github.com/shuta13/react-deep
 ## Usage
 
 ```shell
-yarn create toy-react-app <type> <my-app>
+yarn create toy-react-app <year> <type> <my-app>
 
 # or
 
-npx create-toy-react-app <type> <my-app>
-# Also, you can use `npm init toy-react-app <type> <my-app>`
+npx create-toy-react-app <year> <type> <my-app>
+# Also, you can use `npm init toy-react-app <year> <type> <my-app>`
 ```
 
+- `<year>`: Choose `2021`, `2023`
 - `<type>`: Choose `template`, `render-dom`, `reconciliation`, `counter-app` or `completed`
 - `<my-app>`: Enter any name you like. It can be the name of your dog or something.
 
