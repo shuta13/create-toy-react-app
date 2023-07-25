@@ -10,13 +10,14 @@ const pkg = {
 
 program
   .version(pkg.version)
+  .argument('<year>', "choose '2021', '2023' ('2021' is default)")
   .argument(
     '<type>',
     "choose 'template', 'render-dom', 'reconciliation', 'counter-app' or 'completed' (required)"
   )
   .argument('<project-name>', 'your project name (required)')
-  .usage(`${chalk.yellow('<type>')} ${chalk.green('<project-name>')}`)
-  .action((type, projectName) => {
-    commands(type, projectName);
+  .usage(`${chalk.cyan('<year>')} ${chalk.yellow('<type>')} ${chalk.green('<project-name>')}`)
+  .action((year, type, projectName) => {
+    commands(year, type, projectName);
   })
   .parse(process.argv);

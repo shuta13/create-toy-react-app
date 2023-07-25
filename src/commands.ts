@@ -8,7 +8,7 @@ import chalk from 'chalk';
 import path from 'path';
 import { getPkgManager } from './utils/cmd';
 
-const cloneRepositoryFromBranch = async (type: Type, projectName: string) => {
+const cloneRepositoryFromBranch = async (year: string, type: Type, projectName: string) => {
   logs.info(`clone project for ${chalk.bold(projectName)}...`);
 
   const gitInfo = HostedGitInfo.fromUrl(
@@ -21,7 +21,7 @@ const cloneRepositoryFromBranch = async (type: Type, projectName: string) => {
   }
 
   const branch =
-    type === 'completed' ? ['--branch', 'main'] : ['--branch', `feat/${type}`];
+    type === 'completed' ? ['--branch', `${year}/main`] : ['--branch', `${year}/feat/${type}`];
   const args = [
     'clone',
     url,
@@ -75,17 +75,17 @@ const usage = (projectName: string) => {
   `);
 };
 
-const initailize = async (type: Type, projectName: string) => {
+const initailize = async (year: string, type: Type, projectName: string) => {
   console.log(chalk.green('🤿 Hello React Deep Divers!'));
 
-  await cloneRepositoryFromBranch(type, projectName);
+  await cloneRepositoryFromBranch(year, type, projectName);
 
   await installDeps(projectName);
 
   usage(projectName);
 };
 
-export const commands = (type: Type, projectName: string) => {
+export const commands = (year: string, type: Type, projectName: string) => {
   if (!argumentTypes.includes(type)) {
     const pkgManager = getPkgManager();
     let cmd =
@@ -102,5 +102,5 @@ export const commands = (type: Type, projectName: string) => {
     exit(1);
   }
 
-  initailize(type, projectName);
+  initailize(year, type, projectName);
 };
