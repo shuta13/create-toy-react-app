@@ -1,6 +1,6 @@
 {
   "name": "create-toy-react-app",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "lib/bin.js",
   "files": [
     "lib"
