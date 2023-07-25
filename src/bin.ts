@@ -10,7 +10,7 @@ const pkg = {
 
 program
   .version(pkg.version)
-  .argument('<year>', "choose '2021', '2023' ('2021' is default)")
+  .argument('<year>', "choose '2021', '2023'")
   .argument(
     '<type>',
     "choose 'template', 'render-dom', 'reconciliation', 'counter-app' or 'completed' (required)"
