@@ -10,10 +10,12 @@ const pkg = {
 
 program
   .version(pkg.version)
-  .argument('<year>', "choose '2021', '2023'")
+  .argument('<year>', "choose '2021', '2023' (required)")
   .argument(
     '<type>',
-    "choose 'template', 'render-dom', 'reconciliation', 'counter-app' or 'completed' (required)"
+    `choose at least one from the below options (required)
+2021: 'template', 'render-dom', 'reconciliation', 'counter-app' or 'completed'
+2023: 'ssr-template', 'ssr-completed', 'ssg-template', or 'ssg-completed'`
   )
   .argument('<project-name>', 'your project name (required)')
   .usage(`${chalk.cyan('<year>')} ${chalk.yellow('<type>')} ${chalk.green('<project-name>')}`)
