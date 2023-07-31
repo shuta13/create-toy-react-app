@@ -14,7 +14,11 @@ npx create-toy-react-app <year> <type> <my-app>
 ```
 
 - `<year>`: Choose `2021`, `2023`
-- `<type>`: Choose `template`, `render-dom`, `reconciliation`, `counter-app` or `completed`
+- `<type>`: Choose at least one from the below options.
+```
+2021: 'template', 'render-dom', 'reconciliation', 'counter-app' or 'completed'
+2023: 'ssr-template', 'ssr-completed', 'ssg-template', or 'ssg-completed'
+```
 - `<my-app>`: Enter any name you like. It can be the name of your dog or something.
 
 ## License
